@@ -82,33 +82,6 @@ service/mynginx exposed
 Biradars-Air-4:~ sangam$ kubectl get endpoints mynginx
 NAME      ENDPOINTS                                AGE
 mynginx   10.42.0.4:80,10.42.0.5:80,10.42.0.6:80   24s
-Biradars-Air-4:~ sangam$ curl 10.42.0.4:80
-<!DOCTYPE html>
-<html>
-<head>
-<title>Welcome to nginx!</title>
-<style>
-    body {
-        width: 35em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-    }
-</style>
-</head>
-<body>
-<h1>Welcome to nginx!</h1>
-<p>If you see this page, the nginx web server is successfully installed and
-working. Further configuration is required.</p>
-
-<p>For online documentation and support please refer to
-<a href="http://nginx.org/">nginx.org</a>.<br/>
-Commercial support is available at
-<a href="http://nginx.com/">nginx.com</a>.</p>
-
-<p><em>Thank you for using nginx.</em></p>
-</body>
-</html>
-
 Biradars-Air-4:~ sangam$ k3d d
 2019/07/21 04:13:24 Removing cluster [k3s-default]
 2019/07/21 04:13:24 ...Removing server
