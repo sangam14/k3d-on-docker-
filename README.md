@@ -109,5 +109,11 @@ Commercial support is available at
 </body>
 </html>
 
+Biradars-Air-4:~ sangam$ k3d d
+2019/07/21 04:13:24 Removing cluster [k3s-default]
+2019/07/21 04:13:24 ...Removing server
+2019/07/21 04:13:25 SUCCESS: removed cluster [k3s-default]
+Biradars-Air-4:~ sangam$ 
+
 
 ```
