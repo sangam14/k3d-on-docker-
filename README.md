@@ -69,6 +69,49 @@ Biradars-Air-4:~ sangam$ kubectl get pods --all-namespaces
 NAMESPACE     NAME                         READY   STATUS             RESTARTS   AGE
 kube-system   coredns-695688789-d86pm      1/1     Running            1          2m50s
 kube-system   helm-install-traefik-xnsdd   0/1     CrashLoopBackOff   4          2m51s 
+
+Biradars-Air-4:~ sangam$ kubectl run mycountry --image=zoobab/country  
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+deployment.apps/mycountry created
+Biradars-Air-4:~ sangam$ kubectl get pod
+NAME                         READY   STATUS    RESTARTS   AGE
+mycountry-5bdd84bc8d-b697n   1/1     Running   0          11s
+Biradars-Air-4:~ sangam$ kubectl logs mycountry-5bdd84bc8d-b697n 
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+My country is  Belgium
+Biradars-Air-4:~ sangam$ 
+```
+# nginx 
+```
 Biradars-Air-4:~ sangam$ kubectl run mynginx --image=nginx --replicas=3 --port=80
 kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
 deployment.apps/mynginx created 
